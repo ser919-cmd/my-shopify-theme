@@ -383,4 +383,33 @@
 </script>
     <script>
   </body>
+    // Add a custom style and animation to the search input field
+document.addEventListener("DOMContentLoaded", function() {
+    var searchInput = document.querySelector(".header__search-bar input[type='search']");
+
+    if (searchInput) {
+        // Adding custom styles to the search bar
+        searchInput.style.backgroundColor = "#f4f4f4";
+        searchInput.style.border = "2px solid #d1d1d1";
+        searchInput.style.borderRadius = "30px";
+        searchInput.style.padding = "10px 20px";
+        searchInput.style.fontSize = "16px";
+        searchInput.style.transition = "all 0.3s ease";
+        searchInput.style.width = "100%";
+
+        // Adding focus effect to the search input field
+        searchInput.addEventListener("focus", function() {
+            searchInput.style.backgroundColor = "#fff";
+            searchInput.style.borderColor = "#007bff";
+            searchInput.style.boxShadow = "0 0 10px rgba(0, 123, 255, 0.5)";
+        });
+
+        searchInput.addEventListener("blur", function() {
+            searchInput.style.backgroundColor = "#f4f4f4";
+            searchInput.style.borderColor = "#d1d1d1";
+            searchInput.style.boxShadow = "none";
+        });
+    }
+});
+
 </html>
