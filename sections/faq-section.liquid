@@ -1,6 +1,95 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "FAQ Section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "Հարց",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Հարցը"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Պատասխանը"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "FAQ Section"
+    }
+  ]
+}
 {% endschema %}
+
+<div class="faq-wrapper">
+  {% for block in section.blocks %}
+    <div class="faq-item">
+      <button class="faq-question">{{ block.settings.question }}</button>
+      <div class="faq-answer">
+        <p>{{ block.settings.answer }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+.faq-wrapper {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.faq-item {
+  margin-bottom: 15px;
+}
+.faq-question {
+  background: #ffffff;
+  color: #222;
+  cursor: pointer;
+  padding: 15px 20px;
+  width: 100%;
+  text-align: left;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+.faq-question:hover {
+  background: #e6e6e6;
+}
+.faq-answer {
+  display: none;
+  padding: 15px 20px;
+  border-left: 2px solid #2196f3;
+  margin-top: 5px;
+  background: #fff;
+  border-radius: 0 0 12px 12px;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const questions = document.querySelectorAll('.faq-question');
+  questions.forEach(q => {
+    q.addEventListener('click', function() {
+      this.classList.toggle('active');
+      const answer = this.nextElementSibling;
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "block";
+      }
+    });
+  });
+});
+</script>
