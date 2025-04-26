@@ -39,8 +39,8 @@
       "type": "header",
       "settings": {
         "logo_position": "middle-left",
-        "mobile_logo_position": "center",
-        "menu": "main-menu",
+        "mobile_logo_position": "left",
+        "menu": "footer",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
