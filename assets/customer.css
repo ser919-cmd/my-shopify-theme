@@ -753,3 +753,20 @@ li[data-address] > h2 {
 .addresses form > div:nth-of-type(7) + div[id] {
   margin-top: 1.5rem;
 }
+/* Search Bar */
+.header__search-bar input[type="search"] {
+    background-color: #f4f4f4; /* Light grey background */
+    border: 2px solid #d1d1d1; /* Light border */
+    border-radius: 30px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for better usability */
+    font-size: 16px;
+    width: 100%;
+    transition: all 0.3s ease; /* Smooth transition on focus */
+}
+
+/* Focus state */
+.header__search-bar input[type="search"]:focus {
+    background-color: #fff; /* White background on focus */
+    border-color: #007bff; /* Blue border when focused */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Blue shadow */
+}
