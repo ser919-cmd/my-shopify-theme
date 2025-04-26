@@ -57,6 +57,27 @@
     "faq_section_bjP8K3": {
       "type": "faq-section",
       "blocks": {
+        "faq_nHcXFC": {
+          "type": "faq",
+          "settings": {
+            "question": "Հարց 1: Ինչպես է կատարվում առաքումը?",
+            "answer": "<p><span style=\"color: blue;\">Առաքումը կատարվում է</span> <strong>1-2 աշխատանքային օրվա ընթացքում</strong>:</p>"
+          }
+        },
+        "faq_nt8gyi": {
+          "type": "faq",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        },
+        "faq_JA8HWE": {
+          "type": "faq",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        },
         "faq_4kJaQH": {
           "type": "faq",
           "settings": {
@@ -66,6 +87,9 @@
         }
       },
       "block_order": [
+        "faq_nHcXFC",
+        "faq_nt8gyi",
+        "faq_JA8HWE",
         "faq_4kJaQH"
       ],
       "custom_css": [],
