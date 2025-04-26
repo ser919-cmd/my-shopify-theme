@@ -60,8 +60,8 @@
         "faq_4kJaQH": {
           "type": "faq",
           "settings": {
-            "question": "Հարց 1: Ինչպես է կատարվում առաքումը?",
-            "answer": "<strong>Սա համարձակ տեքստ է</strong>"
+            "question": "",
+            "answer": "<p><strong>Հարց 1: Ինչպես է կատարվում առաքումը?</strong></p>\n<p><span style=\"color: blue;\">Առաքումը կատարվում է</span> <strong>1-2 աշխատանքային օրվա ընթացքում</strong>:</p>\n<ul>\n  <li>Երևանում առաքումը 24 ժամվա ընթացքում։</li>\n  <li>Մարզերում՝ մինչև 3 օր։</li>\n</ul>\n<p>Եզրափակիչ տեղեկություն: <span style=\"color: red;\">Անվճար առաքում</span> Երևանում:</p>"
           }
         }
       },
