@@ -53,53 +53,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "faq_section_bjP8K3": {
-      "type": "faq-section",
-      "blocks": {
-        "faq_nHcXFC": {
-          "type": "faq",
-          "settings": {
-            "question": "Հարց 1: Ինչպես է կատարվում առաքումը?",
-            "answer": "<p><span style=\"color: blue;\">Առաքումը կատարվում է</span> <strong>1-2 աշխատանքային օրվա ընթացքում</strong>:</p>"
-          }
-        },
-        "faq_nt8gyi": {
-          "type": "faq",
-          "settings": {
-            "question": "Հարց 1: Ինչպես կարող եմ պատվիրել ապրանքներ?",
-            "answer": "<p>Պատվեր կատարել շատ հեշտ է: Ընտրիր ապրանքը և ավելացրու այն իրանի մեջ:</p>"
-          }
-        },
-        "faq_JA8HWE": {
-          "type": "faq",
-          "settings": {
-            "question": "",
-            "answer": ""
-          }
-        },
-        "faq_4kJaQH": {
-          "type": "faq",
-          "settings": {
-            "question": "",
-            "answer": "<p><strong>Հարց 1: Ինչպես է կատարվում առաքումը?</strong></p>\n<p><span style=\"color: blue;\">Առաքումը կատարվում է</span> <strong>1-2 աշխատանքային օրվա ընթացքում</strong>:</p>\n<ul>\n  <li>Երևանում առաքումը 24 ժամվա ընթացքում։</li>\n  <li>Մարզերում՝ մինչև 3 օր։</li>\n</ul>\n<p>Եզրափակիչ տեղեկություն: <span style=\"color: red;\">Անվճար առաքում</span> Երևանում:</p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq_nHcXFC",
-        "faq_nt8gyi",
-        "faq_JA8HWE",
-        "faq_4kJaQH"
-      ],
-      "custom_css": [],
-      "name": "FAQ Section",
-      "settings": {}
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "faq_section_bjP8K3"
+    "header"
   ]
 }
