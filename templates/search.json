@@ -14,7 +14,7 @@
       "settings": {
         "columns_desktop": 4,
         "columns_mobile": "2",
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
@@ -40,6 +40,7 @@
         },
         "title_8yhpw8": {
           "type": "title",
+          "disabled": true,
           "settings": {
             "heading_size": "h1"
           }
