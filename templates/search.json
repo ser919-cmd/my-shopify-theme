@@ -28,45 +28,45 @@
         "padding_bottom": 36
       }
     },
-    "featured_product_iPEiPN": {
+    "featured_product_ejECj7": {
       "type": "featured-product",
       "blocks": {
-        "text_Wkm3HL": {
+        "text_wBizFn": {
           "type": "text",
           "settings": {
             "text": "{{ section.settings.product.vendor }}",
             "text_style": "uppercase"
           }
         },
-        "title_Dz6VC4": {
+        "title_8yhpw8": {
           "type": "title",
           "settings": {
             "heading_size": "h1"
           }
         },
-        "price_Uq8mTM": {
+        "price_JYtmca": {
           "type": "price",
           "settings": {}
         },
-        "variant_picker_iqziay": {
+        "variant_picker_BU97Q7": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector_Dj6pyk": {
+        "quantity_selector_hXAHxw": {
           "type": "quantity_selector",
           "settings": {}
         },
-        "buy_buttons_g4WGBR": {
+        "buy_buttons_EMYC9p": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
         },
-        "share_KVAJbB": {
+        "share_kJJC4h": {
           "type": "share",
           "settings": {
             "share_label": "Share"
@@ -74,13 +74,13 @@
         }
       },
       "block_order": [
-        "text_Wkm3HL",
-        "title_Dz6VC4",
-        "price_Uq8mTM",
-        "variant_picker_iqziay",
-        "quantity_selector_Dj6pyk",
-        "buy_buttons_g4WGBR",
-        "share_KVAJbB"
+        "text_wBizFn",
+        "title_8yhpw8",
+        "price_JYtmca",
+        "variant_picker_BU97Q7",
+        "quantity_selector_hXAHxw",
+        "buy_buttons_EMYC9p",
+        "share_kJJC4h"
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
@@ -101,6 +101,6 @@
   },
   "order": [
     "main",
-    "featured_product_iPEiPN"
+    "featured_product_ejECj7"
   ]
 }
