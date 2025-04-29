@@ -27,12 +27,14 @@
 }
 
 .overlay-content {
-  position: relative;
+  position: absolute; /* Փոխվեց relative-հիմնին absolute-ի */
+  top: 0; /* Այսսպես դասավորվում է վերևից */
+  left: 50%; 
+  transform: translateX(-50%); /* Կենտրոնացնելը */
   z-index: 1;
   text-align: center;
   color: white;
-  padding-top: 30vh;
-  margin-bottom: 0; /* Ավելացրեցի այս հատվածը */
+  padding: 30vh 0 0 0; /* Մեծացնելու չափը, եթե անհրաժեշտ է */
 }
 </style>
 
