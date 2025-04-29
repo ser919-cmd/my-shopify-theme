@@ -9,10 +9,9 @@
   </div>
 </section>
 
-<style>
 .video-hero {
   position: relative;
-  height: 100vh;
+  height: 100vh; /* Վիդեոն ամբողջ էկրանով է */
   overflow: hidden;
 }
 
@@ -22,21 +21,20 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  object-fit: cover; /* Հարմարեցնում է տեսանյութը */
+  z-index: -1; /* Կամացեցնում է տեսանյութը՝ միայն ֆոնի համար */
 }
 
 .overlay-content {
-  position: absolute; /* Փոխվեց relative-հիմնին absolute-ի */
-  top: 0; /* Այսսպես դասավորվում է վերևից */
-  left: 50%; 
-  transform: translateX(-50%); /* Կենտրոնացնելը */
-  z-index: 1;
+  position: absolute;
+  z-index: 1; /* Դարձնում է overlay բովանդակությունը բարձր */
   text-align: center;
   color: white;
-  padding: 30vh 0 0 0; /* Մեծացնելու չափը, եթե անհրաժեշտ է */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Կենտրոնացնում է բովանդակությունը */
+  padding: 20px;
 }
-</style>
 
 
 
