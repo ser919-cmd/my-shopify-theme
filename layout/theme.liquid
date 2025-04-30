@@ -383,4 +383,21 @@
 </script>
     <script>
   </body>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script>
+  emailjs.init('your_user_id'); // Ձեր EmailJS օգտագործողի ID
+
+  document.getElementById('order-details-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var formData = new FormData(e.target);
+    
+    emailjs.sendForm('your_service_id', 'your_template_id', formData)
+      .then(function(response) {
+        alert('Պատվերը ուղարկված է');
+      }, function(error) {
+        alert('Սխալ. Պատվերը չի ուղարկվել: ' + JSON.stringify(error));
+      });
+  });
+</script>
 </html>
