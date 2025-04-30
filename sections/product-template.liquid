@@ -1,6 +1,28 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
+<div class="product-description">
+   {{ product.description }}
+</div>
+
+<!-- Հաճախորդի տվյալների ֆորմ -->
+<form id="order-details-form" action="#" method="POST">
+  <h3>Ձեր տվյալները՝ պատվեր ստանալու համար</h3>
+
+  <label for="name">👤 Անունը:</label>
+  <input type="text" id="name" name="name" required placeholder="Ընդունելի անուն">
+
+  <label for="phone">📞 Հեռախոսահամարը:</label>
+  <input type="text" id="phone" name="phone" required placeholder="Ընդունելի հեռախոսահամար">
+
+  <label for="email">📧 Էլ. փոստը:</label>
+  <input type="email" id="email" name="email" required placeholder="Ընդունելի էլ. փոստ">
+
+  <label for="city">📍 Քաղաք:</label>
+  <input type="text" id="city" name="city" required placeholder="Քաղաք">
+
+  <label for="address">🏠 Փողոցն ու շենքի համարը:</label>
+  <input type="text" id="address" name="address" required placeholder="Փողոցն ու շենքի համարը">
+
+  <label for="product">📦 Ապրանքը:</label>
+  <input type="text" id="product" name="product" value="{{ product.title }}" readonly>
+
+  <button type="submit">✅ Պատվիրել</button>
+</form>
