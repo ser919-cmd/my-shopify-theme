@@ -196,6 +196,30 @@
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                     {{ product.description }}
                   </div>
+                  <form id="order-details-form" action="#" method="POST" style="margin-top: 30px;">
+  <h3>📝 Պատվերի տվյալներ</h3>
+
+  <label>👤 Անուն</label>
+  <input type="text" name="name" required>
+
+  <label>📞 Հեռախոս</label>
+  <input type="text" name="phone" required>
+
+  <label>📧 Էլ․ փոստ</label>
+  <input type="email" name="email" required>
+
+  <label>📍 Քաղաք</label>
+  <input type="text" name="city" required>
+
+  <label>🏠 Հասցե</label>
+  <input type="text" name="address" required>
+
+  <label>📦 Ապրանք</label>
+  <input type="text" name="product" value="{{ product.title }}" readonly>
+
+  <button type="submit">✅ Ուղարկել</button>
+</form>
+
                 {%- endif -%}
               {%- when 'sku' -%}
                 <p
