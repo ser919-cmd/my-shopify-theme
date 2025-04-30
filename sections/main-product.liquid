@@ -747,6 +747,24 @@
     </script>
   </div>
 </product-info>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("ulDZw9AsjX74g5vli"); // ✅ սա քո EmailJS Public Key-ն է
+
+    document.getElementById("order-details-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm("service_XXXXXXX", "template_XXXXXXX", this)
+        .then(function () {
+          alert("✅ Պատվերը հաջողությամբ ուղարկվեց:");
+        }, function (error) {
+          alert("❌ Սխալ տեղի ունեցավ: " + JSON.stringify(error));
+        });
+    });
+  });
+</script>
+
 
 {% schema %}
 {
@@ -2276,3 +2294,4 @@
   ]
 }
 {% endschema %}
+
