@@ -197,27 +197,7 @@
                     {{ product.description }}
                   </div>
                   <form id="order-details-form" action="#" method="POST" style="margin-top: 30px;">
-  <h3>📝 Պատվերի տվյալներ</h3>
 
-  <label>👤 Անուն</label>
-  <input type="text" name="name" required>
-
-  <label>📞 Հեռախոս</label>
-  <input type="text" name="phone" required>
-
-  <label>📧 Էլ․ փոստ</label>
-  <input type="email" name="email" required>
-
-  <label>📍 Քաղաք</label>
-  <input type="text" name="city" required>
-
-  <label>🏠 Հասցե</label>
-  <input type="text" name="address" required>
-
-  <label>📦 Ապրանք</label>
-  <input type="text" name="product" value="{{ product.title }}" readonly>
-
-  <button type="submit">✅ Ուղարկել</button>
 </form>
 
                 {%- endif -%}
@@ -748,22 +728,7 @@
   </div>
 </product-info>
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    emailjs.init("X6JB7kazeVS6B_0fO"); // ✅ սա քո EmailJS Public Key-ն է
 
-    document.getElementById("order-details-form").addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      emailjs.sendForm("service_5rm76cp", "template_4tpptoc", this)
-        .then(function () {
-          alert("✅ Պատվերը հաջողությամբ ուղարկվեց:");
-        }, function (error) {
-          alert("❌ Սխալ տեղի ունեցավ: " + JSON.stringify(error));
-        });
-    });
-  });
-</script>
 
 
 {% schema %}
