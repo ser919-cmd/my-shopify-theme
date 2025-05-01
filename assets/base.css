@@ -3615,3 +3615,17 @@ details-disclosure > details {
   transform: scale(1.05);
   box-shadow: 0 0 20px #007BFF, 0 0 40px #007BFF, 0 0 60px #007BFF;
 }
+.custom-product-description {
+  margin-top: 40px;
+  padding: 24px;
+  background-color: #e0f7f5; /* փիրուզագույն */
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.custom-product-description h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #005f4b; /* մուգ կանաչ */
+}
