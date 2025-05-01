@@ -191,11 +191,13 @@
                     {%- endif -%}
                   {%- endif -%}
                 </p>
+              
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
                <div class="custom-product-description product__description rte">
                    <h2>Ապրանքի նկարագրություն</h2>
   {{ product.description }}
+                  
 </div>
                   <form id="order-details-form" action="#" method="POST" style="margin-top: 30px;">
 
@@ -728,7 +730,7 @@
     </script>
   </div>
 </product-info>
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 
 
 
